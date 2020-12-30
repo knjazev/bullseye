@@ -7,24 +7,37 @@
 //
 
 import UIKit
+import WebKit
 
 class AboutViewController: UIViewController {
 
+   
+    
+    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var closeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.webView.isOpaque = true
+        self.webView.backgroundColor = UIColor.white
+        
+       if let url = Bundle.main.url(
+            forResource: "BullsEye", withExtension: "html") {
+            let request = URLRequest(url: url)
+            webView.load(request)
+        
+        self.webView.isOpaque = true
+               self.webView.backgroundColor = UIColor.white
+    
+          }
+        
+       
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func close() {
+        dismiss(animated: true, completion: nil)
     }
-    */
-
+    
+    
 }

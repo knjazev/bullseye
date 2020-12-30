@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5214779925923DD50010305F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5214779825923DD50010305F /* AboutViewController.swift */; };
+		5214779D25924A540010305F /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 5214779C25924A540010305F /* BullsEye.html */; };
+		521477A025924DD90010305F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5214779F25924DD90010305F /* WebKit.framework */; };
 		52795882258A0C0200B6804E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52795881258A0C0200B6804E /* AppDelegate.swift */; };
 		52795884258A0C0200B6804E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52795883258A0C0200B6804E /* SceneDelegate.swift */; };
 		52795886258A0C0200B6804E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52795885258A0C0200B6804E /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5214779825923DD50010305F /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		5214779C25924A540010305F /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
+		5214779F25924DD90010305F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		5279587E258A0C0200B6804E /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52795881258A0C0200B6804E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52795883258A0C0200B6804E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521477A025924DD90010305F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5214779E25924DD90010305F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5214779F25924DD90010305F /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		52795875258A0C0100B6804E = {
 			isa = PBXGroup;
 			children = (
 				52795880258A0C0200B6804E /* BullsEye */,
 				5279587F258A0C0200B6804E /* Products */,
+				5214779E25924DD90010305F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +72,7 @@
 		52795880258A0C0200B6804E /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				5214779C25924A540010305F /* BullsEye.html */,
 				52795881258A0C0200B6804E /* AppDelegate.swift */,
 				52795883258A0C0200B6804E /* SceneDelegate.swift */,
 				52795885258A0C0200B6804E /* ViewController.swift */,
@@ -63,6 +80,7 @@
 				5279588A258A0C0300B6804E /* Assets.xcassets */,
 				5279588C258A0C0300B6804E /* LaunchScreen.storyboard */,
 				5279588F258A0C0300B6804E /* Info.plist */,
+				5214779825923DD50010305F /* AboutViewController.swift */,
 			);
 			path = BullsEye;
 			sourceTree = "<group>";
@@ -126,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5279588E258A0C0300B6804E /* LaunchScreen.storyboard in Resources */,
+				5214779D25924A540010305F /* BullsEye.html in Resources */,
 				5279588B258A0C0300B6804E /* Assets.xcassets in Resources */,
 				52795889258A0C0200B6804E /* Main.storyboard in Resources */,
 			);
@@ -140,6 +159,7 @@
 			files = (
 				52795886258A0C0200B6804E /* ViewController.swift in Sources */,
 				52795882258A0C0200B6804E /* AppDelegate.swift in Sources */,
+				5214779925923DD50010305F /* AboutViewController.swift in Sources */,
 				52795884258A0C0200B6804E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
